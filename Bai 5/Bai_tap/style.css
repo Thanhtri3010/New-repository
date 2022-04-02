@@ -1,0 +1,14 @@
+.table-one
+td{
+  color: darkturquoise;
+}
+  th{
+  color: dodgerblue;
+}
+.table-two
+  th{
+  background: gold;
+}
+.dong-one{
+  background: chocolate;
+}
