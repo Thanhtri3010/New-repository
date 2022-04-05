@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <form>
+    <table cellpadding="5">
+      <tr>
+        <td><input type="number" id="one"></td>
+        <td><input type="number" id="two"></td>
+      </tr>
+      <tr>
+        <td><button type="button" onclick="addis()">Addition(+)</button></td>
+        <td><button type="button" onclick="subtracs()">Subtraction(-)</button></td>
+        <td><button type="button" onclick="multiplicas()">Multiplication(*)</button></td>
+        <td><button type="button" onclick="divis()">Division(/)</button></td>
+      </tr>
+    </table>
+    <label>Result Division: </label><span id="result">0</span>
+  </form>
+  <script>
+    function addis(){
+        let numa = parseFloat(document.getElementById('one').value);
+        let numb = parseFloat(document.getElementById('two').value);
+        document.getElementById('result').innerHTML = numa + numb;
+    }
+    function subtracs(){
+        let numa = document.getElementById('one').value;
+        let numb = document.getElementById('two').value;
+        document.getElementById('result').innerHTML = numa - numb;
+    }
+    function multiplicas(){
+        let numa = document.getElementById('one').value;
+        let numb = document.getElementById('two').value;
+        document.getElementById('result').innerHTML = numa * numb;
+    }
+    function divis(){
+        let numa = document.getElementById('one').value;
+        let numb = document.getElementById('two').value;
+        document.getElementById('result').innerHTML = numa / numb;
+    }
+  </script>
+</body>
+</html> eval

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    let diemVatly;
+    let diemHoahoc;
+    let dienSinhhoc;
+    diemVatly = prompt('Nhập điểm Vật Lý')
+    diemHoahoc = prompt('Nhập điểm Hoá Học');
+    dienSinhhoc = prompt('Nhập điểm Sinh Học');
+    let vatly = parseFloat(diemVatly);
+    let hoahoc = parseFloat(diemHoahoc);
+    let sinhhoc = parseFloat(dienSinhhoc);
+    let trungbinh = (vatly + hoahoc + sinhhoc) / 3;
+    document.write('Điểm trung bình' + trungbinh);
+  </script>
+
+</body>
+</html>
