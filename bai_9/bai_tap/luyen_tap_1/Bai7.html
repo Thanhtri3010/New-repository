@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    let callminutes = parseInt(prompt('Nhập số phút gọi:'));
+    if(callminutes >= 150){
+        let result = callminutes * 500; alert(result)
+    }else if(callminutes >= 100){
+        let result = callminutes * 1000; alert(result)
+    }else if(callminutes >= 50){
+        let result = callminutes * 1500; alert(result)
+    }else {let result = callminutes * 2000; alert(result)
+    }
+  </script>
+</body>
+</html>

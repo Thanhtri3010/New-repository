@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    let maths = parseInt(prompt('Nhập điểm toán:'));
+    let physial = parseInt(prompt('Nhập điểm lý:'));
+    let chemical = parseInt(prompt('Nhập điểm hoá:'));
+    let average = (maths + physial + chemical) / 3;
+    if (average >= 8.5) {
+        alert('Học sinh giỏi');
+    } else if (average >= 6.5) {
+        alert('Học sinh tiên tiến');
+    } else if (average >= 5) {
+        alert('Học sinh trung bình')
+    } else {
+        alert('học sinh yếu')
+    }
+</script>
+</body>
+</html>
