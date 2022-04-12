@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let monney = parseInt(prompt("Nhập số tiền gửi: "));
+  let time = parseInt(prompt("Nhập số tháng gửi tiền:"));
+  for (i=1;i<time;i++){
+      monney=monney+monney*0.6/100;
+  }
+  alert(monney);
+</script>
+</body>
+</html>

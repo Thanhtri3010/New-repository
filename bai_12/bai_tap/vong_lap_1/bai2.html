@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('Nhập nhiệt độ:'));
+    while (true) {
+        if (a > 100) {
+            a = parseInt(prompt('Giảm nhiệt độ'));
+            if (a === true) {
+                document.write("nhiệt độ hiện tại là " + a);
+                break;
+            }
+        } else if (a < 20) {
+            a = parseInt(prompt('Tăng nhiệt độ'));
+            if (a === true) {
+                document.write("nhiệt độ hiện tại là " + a);
+                break;
+            }
+        } else {
+            document.write("nhiệt độ hiện tại là " + a);
+            break
+        }
+    }
+</script>
+</body>
+</html>
