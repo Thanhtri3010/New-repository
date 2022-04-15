@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    let array = []
+    let n = 10
+    for (let i = 0; i < n; i++) {
+        array.push(parseInt(prompt("Nhập phần tử cần sắp xếp")));
+    }
+    let swap;
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j <= i; j++)
+            if (array[i] > array[j]) {
+                swap = array[i];
+                array[i] = array[j];
+                array[j] = swap;
+            }
+    }
+    document.write('Thứ tự giảm dần <br>')
+    for (let i = 0; i < array.length; i++) {
+        document.write(" " + array[i])
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h2>Từ Điển Anh - Việt</h2>
+<form>
+  <input id="search" type="text" placeholder="Nhập từ cần tìm">
+  <button onclick="clickme()">Tìm</button>
+</form>
+<script>
+    function clickme() {
+        let dictionaryvn = ["xin chào", "thế nào", "quyển vở", "máy tính"];
+        let dictionaryen = ["hello", "how", "book", "computer"];
+        let translate = document.getElementById("search").value;
+        let index = -1
+        for (let i = 0; i < dictionaryen.length; i++) {
+            if (translate === dictionaryen[i]) {
+                index = i;
+                document.write(dictionaryvn[index]);
+                index = 1;
+            }
+        }
+        if (index === -1) {
+            document.write("Không tìm ra từ")
+        }
+    }
+</script>
+</body>
+</html>

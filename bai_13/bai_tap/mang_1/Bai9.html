@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = [];
+    let c = [];
+    let n = 10;
+    for (let i = 0; i < n; i++) {
+        a.push(prompt('Nhập mảng a'))
+    }
+    for (let i = 0; i < n; i++) {
+        b.push(prompt('Nhập mảng b'))
+        for (let i = 0; i < a.length; i++) {
+            c.push(a[i]);
+        }
+        for (let j = 0; j < b.length; j++) {
+            c.push(b[j])
+        }
+        document.write(c);
+</script>
+</body>
+</html>
