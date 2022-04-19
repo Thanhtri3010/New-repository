@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    let number = [];
+    for (let i = 0; i < 5; i++) {
+        number[i] = parseInt(prompt('Nhập 5 số bất kì'))
+    }
+
+    function reve(numberss) {
+        let first = 0;
+        let last = numberss.length - 1;
+        while (first < last) {
+            let b = numberss[first];
+            numberss[first] = numberss[last];
+            numberss[last] = b;
+            first++;
+            last--;
+        }
+        return numberss
+    }
+
+    document.write(reve(number))
+</script>
+</body>
+</html>

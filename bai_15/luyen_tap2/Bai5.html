@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    let a1 = parseInt(prompt("Nhập số thứ nhất"));
+    let b2 = parseInt(prompt("Nhập số thứ hai"));
+    let c3 = parseInt(prompt("Nhập số thứ ba"));
+
+    function number(a, b, c) {
+        if (a < b && a < c || a === b && a < c) {
+            return a
+        } else if (b < a && b < c || b === c && b < a) {
+            return b
+        } else {
+            return c
+        }
+    }
+
+    document.write(number(a1, b2, c3) + " là số nhỏ nhất")
+</script>
+</body>
+</html>

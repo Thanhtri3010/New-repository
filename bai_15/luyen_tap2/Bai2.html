@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    let r = parseInt(prompt("nhập bán kính hình tròn"));
+    let pi = 3.14;
+    function acreage(A) {
+        let s = Math.pow(A, 2) * pi
+        document.write("Diện tích hình tròn là : " + s + "<br>");
+    }
+
+    function perimeter(B) {
+        let c = B * 2* pi
+        document.write("Chu vi hình tròn là : "+ c)
+    }
+    acreage(r)
+    perimeter(r)
+</script>
+</body>
+</html>

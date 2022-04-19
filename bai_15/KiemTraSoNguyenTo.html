@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    function isprime(number) {
+        let flag = true;
+        if (number < 2)
+            flag = false;
+        let i = 2;
+        while (i < number) {
+            if (number % i === 0) {
+                flag = false;
+                break;
+            }
+            i++;
+        }
+        return flag;
+    }
+
+    let number = prompt(" Nhập một số n: ");
+
+    let i = false, check = false, result = "";
+    while (i < number) {
+        check = isprime(i);
+        if (check === true) result += i + " ";
+        ++i;
+    }
+    document.write(result + '<br>');
+</script>
+</body>
+</html>

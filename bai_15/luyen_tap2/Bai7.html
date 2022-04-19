@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    let numberA = parseInt(prompt("nhập số thứ nhất: "));
+    let numberB = parseInt(prompt('Nhập số thứ hai: '));
+
+    function convert(a1, b1) {
+        let a = a1;
+        a1 = b1;
+        b1 = a;
+        document.write(a1 + '<br>')
+        document.write(b1)
+    }
+    convert(numberA,numberB)
+</script>
+</body>
+</html>

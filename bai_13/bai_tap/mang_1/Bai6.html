@@ -7,21 +7,22 @@
 <body>
 <script>
     // let number = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
-    let array =[]
-    let n =10
-    for (let i=0; i<n;i++){
+    let array = []
+    let n = 10
+    for (let i = 0; i < n; i++) {
         array.push(parseInt(prompt("Nhập phần tử")))
     }
     let numbers = parseInt(prompt('Nhập số cần tìm'));
     let flag = false
-    for (let i= 0; i<array.length; i++){
-        if (array[i]=== numbers){
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === numbers) {
             flag = true;
             break;
         }
-    }if(flag===false){
+    }
+    if (flag === false) {
         document.write('V is not in the array')
-    }else {
+    } else {
         document.write('V is in the array')
     }
 </script>

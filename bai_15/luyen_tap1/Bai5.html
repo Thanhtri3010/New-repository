@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    function star() {
+        let a = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let b = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        let c = prompt("nhập tên ngôi sao tìm kiếm:");
+        let index = -1
+        for (let i = 0; i < a.length; i++) {
+            if (c === a[i]) {
+                index = i
+                document.write(b[index])
+            }
+        }if (index === -1){
+            document.write("không tìm ra ngôi sao")
+        }
+    }
+    star()
+</script>
+</body>
+</html>
