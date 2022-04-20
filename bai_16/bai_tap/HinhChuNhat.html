@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    class Rectangle {
+        constructor(length, width) {
+            this.length = length;
+            this.width = width;
+        }
+
+        setLength(newLength) {
+            this.length = newLength
+        }
+
+        setWidth(newWidth) {
+            this.width = newWidth
+        }
+
+        getAcreage() {
+            return this.length * this.width
+        }
+
+        getPerimeter() {
+            return (this.width + this.length) * 2
+        }
+    }
+
+    let rectangle = new Rectangle(5, 6);
+    rectangle.setLength(2);
+    rectangle.setWidth(3)
+    alert("Diện tích là:" + rectangle.getAcreage());
+    alert("Chu vi là:" + rectangle.getPerimeter());
+</script>
+</body>
+</html>
