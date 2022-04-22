@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(mass) {
+            this.mass = mass;
+        }
+
+        setMass(mass) {
+            this.mass = mass
+        }
+
+        getMass() {
+            return this.mass
+        }
+
+        decrese() {
+            this.mass--
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight
+        }
+
+        saySomething(value) {
+            return value
+        }
+
+        getWeight() {
+            return this.weight
+        }
+
+        setApple(apple) {
+            this.apple = apple
+        }
+
+        bite() {
+            if (this.apple.getMass()) {
+                this.weight++
+                this.apple.decrese()
+            } else {
+                document.write("Ăn hết")
+            }
+        }
+
+    }
+
+    let adam = new Human("Adam", "Male", 60);
+    let eva = new Human("Eva", "Female", 40);
+    let apple = new Apple(10);
+    adam.setApple(apple)
+    eva.setApple(apple)
+    for (let i = 0; i <5 ; i++) {
+        document.write("Adam nói: " + adam.saySomething("Anh ăn trước ")+ "<br>");
+        adam.bite();
+        document.write("Trọng lượng táo còn: " + apple.getMass()+"<br>");
+        document.write(" Số cân nặng bây giờ: " + adam.getWeight() + "<br>");
+        document.write("Eva nói: " + eva.saySomething("Đến lượt em: ") + "<br>");
+        eva.bite();
+        document.write("Trọng lượng táo còn: " + apple.getMass()+ "<br>");
+        document.write(" Số cân nặng bây giờ: " + eva.getWeight() + "<br>");
+    }
+</script>
+</body>
+</html>
