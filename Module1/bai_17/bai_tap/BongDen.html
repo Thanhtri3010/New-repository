@@ -7,48 +7,51 @@
 <body>
 <script>
     class SwichButton {
-        constructor(status) {
-            this.status = status;
+        constructor() {
+            this._status = false;
         }
 
         connectToLamp(eleciclamp) {
-            this.lamp = electricLamp
+            this._eleciclamp = electriclamp
         }
-        switchOff(){
-            this.status = "off"
-            this.lamp.switchOff()
+
+        getStatus() {
+            return this._status;
+        }
+
+        setStatus(value) {
+            this._status = value;
         }
         switchOn(){
-            this.status = "on"
-            this.lamp.switchOn()
+            this._status = true;
+            this._eleciclamp.turnOn()
+        }
+        switchOff(){
+            this._status = false;
+            this._eleciclamp.turnOff()
         }
     }
 
     class ElectricLamp {
-        constructor(status) {
-            this.status= status
-        }
-        turnOff(){
-            this.status = "off"
+        constructor() {
+            this._status = false
         }
         turnOn(){
-            this.status = "on"
+            this._status = true
+            alert("đèn sáng");
+        }
+        turnOff(){
+            this._status = false;
+            alert("đèn tắt");
         }
 
     }
     let swichbutton = new SwichButton('off');
     let electriclamp = new ElectricLamp('off');
     swichbutton.connectToLamp(electriclamp)
-    for (let i = 0; i < 5; i++) {
-        swichbutton.switchOn()
-        if (electriclamp.status === 'on'){
-            document.write("đèn đang bật")
-        }
-        swichbutton.switchOff()
-        if (electriclamp.status==='off'){
-            document.write("đèn đã tắt")
-        }
-    }
+    swichbutton.switchOn();
+    swichbutton.switchOff()
+
 </script>
 </body>
 </html>
